@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+html {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+.container {
+	display: flex;
+	width: 1200px;
+	height: 750px;
+}
+
+.menu-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 150px;
+    margin-left: -16px;
+}
+
+.menu-box button {
+    border-radius: 0 15px 15px 0;
+    margin-bottom: 1px;
+    width: 50px;
+    height: 35px;
+    color: #3367a9;
+}
+
+.container{
+	background-color: #62b1da;
+}
+
+.container .left-box {
+	width: 30%;	
+}
+
+.left-box div{
+	background-color: white;
+}
+
+.right-box div{
+	background-color: white;
+	
+}
+
+.tool1 {
+	 margin: 30px auto;
+    width: 300PX;
+}
+
+.tool2 {
+    width: 260px;
+    margin: 30px auto;
+}
+
+.page1 {
+	height: 550px;
+    width: 300px;
+    margin: 50px auto;
+}
+
+.profile {
+	border: 1px solid #171717;
+	width: 65%;
+	height: inherit;
+}
+
+.box-radius-5 {
+	border: 1px solid #171717;
+	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.1) 5px 5px 5px -4px;
+}
+
+.dot-line {
+	border: 1px dotted gray;
+	width: 100%;
+	margin: 20px 0;
+}
+
+.page1 img{
+	width: 280px;
+	height: 250px;
+}
+
+.container .left-box {
+	width: 30%;	
+}
+
+.container .right-box {
+	width: 70%;
+	margin-left : -2px;
+}
+
+.right-box .content-box{
+	 margin-left: 3px;
+    width: 800px;
+    height: 550px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.logo-wrapper {
+	width: 49.1%;
+	padding: 15px;
+	margin-left: 200px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.logo-wrapper .literal-logo {
+	width: 100%;
+}
+
+.menu-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 150px;
+    margin-left: -16px;
+}
+
+.menu-box button {
+    border-radius: 0 15px 15px 0;
+    margin-bottom: 1px;
+    width: 50px;
+    height: 30px;
+    font-size: 12px;
+    padding-right: 5px;
+    background-color: #3367a9;
+    color: white;
+}
+
+.content-box .main-box{
+	width: 700px;
+	height: 450px;
+	margin-top: 50px;
+}
+
+.photobookform{
+	display: flex;
+	flex-direction: column;
+}
+
+
+.photobookform .submitbt{
+	width: 70px;
+	height: 30px;
+	margin-left: 630px;
+}
+
+#photo-container{
+	width: 700px;
+	height: 350px;
+}
+
+#photo-container img{
+	width: 700px;
+	height: 350px;
+	
+}

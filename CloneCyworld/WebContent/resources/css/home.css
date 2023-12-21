@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+@keyframes blink {
+    0%, 100% {
+        color: black; /* 글자 색상을 원래 색상 (여기서는 검은색)으로 */
+    }
+    50% {
+        color: red; /* 50% 지점에서 글자 색상을 빨강색으로 변경 */
+    }
+}
+
+html {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+.container {
+	display: flex;
+	width: 1200px;
+	height: 750px;
+}
+
+.container{
+	background-color: #62b1da;
+}
+
+.container .left-box {
+	width: 30%;	
+	margin-left: 12px;
+}
+
+.left-box div{
+	background-color: white;
+}
+
+.tool1 {
+	 margin: 30px auto;
+    width: 300PX;
+}
+
+.tool2 {
+    width: 260px;
+    margin: 30px auto;
+}
+
+.page1 {
+	height: 550px;
+    width: 300px;
+    margin: 50px auto;
+}
+
+.page2 {
+	margin-right: 15px;
+	height: 550px;
+}
+
+.container .right-box {
+	width: 70%; /* 840  */
+}
+
+.right-box-content {
+	margin-bottom: 20px;
+}
+
+.right-box div{
+	background-color: white;
+}
+
+.profile {
+	border: 1px solid #171717;
+	width: 65%;
+	height: inherit;
+}
+
+.box-radius-5 {
+	border: 1px solid #171717;
+	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.1) 5px 5px 5px -4px;
+}
+
+.dot-line {
+	border: 1px dotted lightgray;
+	width: 100%;
+	margin: 20px 0;
+}
+
+.page1 img{
+	width: 280px;
+	height: 250px;
+	margin-bottom: 2px;
+}
+
+.right-box .right-box-content {
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+}
+
+.right-box-content .menu {
+	display: flex;
+	justify-content: center;
+	width: 100px;
+	padding: 5px;
+}
+
+.menu-wrapper+.menu-wrapper {
+	border-top: 1px solid black;
+}
+
+.menu+.menu {
+	border-left: 1px solid black;
+}
+
+.logo-wrapper {
+	width: 49.5%;
+	padding: 15px;
+	margin-left: 210px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.logo-wrapper .literal-logo {
+	width: 100%;
+}
+
+.big-img {
+	width: 92%;
+	height: 400px;
+	border: 1px solid black;
+	border-radius: 3px;
+}
+
+.bgm-wrapper {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+}
+
+.box-radius-5.center-layout-column {
+    height: 550px;
+}
+
+.menu-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 90px;
+    margin-left: -16px;
+}
+
+.menu-box button {
+    border-radius: 0 15px 15px 0;
+    margin-bottom: 2px;
+    width: 60px;
+    height: 37px;
+    font-size: 12px;
+    padding-right: 5px;
+    background-color: #3367a9;
+    color: white;
+}
+
+
+
+.page3{
+	    width: 802px;
+    margin-top: 23px;
+    margin-left: 4px;
+}
+
+.update_literal{
+	animation: blink 1s infinite;
+    color: black; /* 초기 글자 색상 설정 */
+}
+
+.bgm-wrapper .play {
+	position: absolute;
+	width: 11px;
+	height: 11px;
+	margin-right: 72px;
+}
+.bgm-wrapper .stop {
+	position: absolute;
+	width: 11px;
+	height: 11px;
+	margin-right: 60px;
+}
+.bgm-wrapper .playlist {
+	position: absolute;
+	width: 19px;
+	height: 11px;
+	margin-right: 42px;
+}
+
+.bgm-wrapper a:hover {
+	opacity: 0.5;
+	background-color: gray;
+}
+
+.player {
+	margin-right: 40px;
+	margin-bottom:5px;
+	position: relative;
+}
+
+ #videoTitleContainer {
+            display: none; /* 처음에는 숨김 */
+        }
