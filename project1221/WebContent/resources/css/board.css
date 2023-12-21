@@ -1,0 +1,296 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500&display=swap');
+
+
+
+.mid-head {
+	text-align: center;
+}
+
+#location_bar {
+	cursor: pointer;
+	/* 마우스 커서를 포인터로 설정합니다 */
+	margin-top: 5vh;
+	outline: none;
+	box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.mid-head #location_bar {
+	width: 30vw;
+	height: 5vh;
+	text-align: center;
+	box-sizing: border-box;
+	border-radius: 5px;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 1.5rem;
+	border-radius: 10px;
+	border-color: transparent;
+}
+
+.addressList {
+	padding: 10px;
+	border-radius: 8px;
+	background-color: #eff1f5;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#popup {
+	position: absolute;
+	z-index: 1;
+	left: 50%;
+	top: 30%;
+	transform: translate(-50%, -50%);
+	width: 30vw;
+	/* crewboard보다 위에 나타나게 함 */
+}
+
+.address-cate {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.address-menu,
+.address-tab {
+	flex: 0 0 50%;
+	/* 왼쪽 오른쪽으로 50%씩 차지 */
+	overflow-y: auto;
+	/* 스크롤이 필요할 때만 보이도록 함 */
+	padding: 10px;
+	/* 필요에 따라 패딩 설정 */
+}
+
+.address-menu button,
+.address-tab button {
+	width: 100%;
+	/* 버튼이 부모 요소인 .address-menu 및 .address-tab의 너비에 맞게 설정 */
+	/* 나머지 스타일은 이전에 설정한 스타일을 유지할 수 있습니다 */
+}
+
+.address-menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	/* 각 줄의 버튼들을 양쪽으로 분산 정렬 */
+	align-content: flex-start;
+	/* 세로 방향으로 맨 위에서부터 정렬 */
+	height: 150px;
+	/* 일정 높이를 설정하여 스크롤이 나타나도록 함 */
+	overflow-y: auto;
+	/* 스크롤이 필요할 때만 보이도록 함 */
+}
+
+.address-menu button {
+	width: 49%;
+	/* 2개씩 나열하기 위해 버튼 너비 조정 */
+	height: auto;
+	/* 버튼의 높이를 자동으로 조정합니다 */
+	padding: 8px;
+	margin: 5px 0;
+	font-family: 'Noto Sans KR';
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: white;
+	color: #333;
+	cursor: pointer;
+	box-sizing: border-box;
+	/* 패딩과 테두리를 요소의 크기에 포함 */
+}
+
+.address-tab {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	/* 각 줄의 버튼들을 양쪽으로 분산 정렬 */
+	align-content: flex-start;
+	/* 세로 방향으로 맨 위에서부터 정렬 */
+	width: 14vw;
+	height: 15vh;
+	color: #333;
+	cursor: pointer;
+	overflow-y: auto;
+	/* 스크롤이 필요할 때만 보이도록 함 */
+}
+
+.address-tab button {
+	width: calc(33.33% - 5px);
+	/* 3개씩 나열하기 위해 버튼 너비 조정 */
+	height: auto;
+	/* 버튼의 높이를 자동으로 조정합니다 */
+	padding: 10px;
+	margin: 2px 2px;
+	border: 1px solid #ccc;
+	font-family: 'Noto Sans KR';
+	border-radius: 5px;
+	background-color: white;
+	color: #333;
+	cursor: pointer;
+	box-sizing: border-box;
+	/* 패딩과 테두리를 요소의 크기에 포함 */
+}
+
+/* 선택된 버튼의 스타일 */
+button.selected {
+	font-family: 'Noto Sans KR';
+	background-color: #3388df;
+	font-weight: 700;
+	color: white;
+	/* 선택된 버튼의 텍스트 색상을 변경할 수도 있습니다. */
+}
+
+.btn-wrap {
+	margin-top: 2.2vh;
+	display: inline-block;
+	/* 텍스트의 크기에 따라 배경색의 크기를 동적으로 조절 */
+	border-radius: 22px;
+	background-color: #3388df;
+	font-family: 'Noto Sans KR';
+	font-size: 1.8rem;
+	text-align: center;
+	/* 텍스트를 수평으로 가운데 정렬 */
+	padding: 5px 15px;
+}
+
+.btn-wrap a {
+	color: white;
+	text-decoration: none;
+}
+
+.crewboard {
+	padding-top: 3rem;
+	padding-bottom: 1rem;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+
+.crew-sort {
+	border-radius: 0.75rem;
+	cursor: pointer;
+}
+
+#oneday,
+#longday {
+	font-family: 'Noto Sans KR';
+	width: 10rem;
+	font-size: 1.5rem;
+	border: 1px solid rgba(0, 0, 0, 0.175);
+	cursor: pointer;
+	background-color: white;
+	padding: 1rem;
+}
+
+.crew-card {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+.card {
+	width: calc(25% - 30px);
+	/* 카드가 가로로 25% 차지하고 간격을 뺀 크기 */
+	height: calc(50% - 30px);
+	/* 카드가 세로로 50% 차지하고 간격을 뺀 크기 */
+	text-align: center;
+	margin-bottom: 2rem;
+	border: 1px solid rgba(0, 0, 0, 0.175);
+	overflow: hidden;
+	border-radius: 0.375rem;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+	background-color: white;
+}
+
+.card-img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.card-sort {
+	display: flex;
+	justify-content: flex-end;
+	padding: 10px 0;
+}
+
+select {
+	appearance: none;
+	font-family: 'Noto Sans KR';
+	width: 8rem;
+	font-size: 1.5rem;
+	text-align: center;
+	border: 1px solid rgba(0, 0, 0, 0.175);
+	border-radius: 0.75rem;
+	cursor: pointer;
+	padding: 1rem;
+}
+
+select:focus {
+	outline: none;
+	border: none;
+}
+
+.card-img {
+	box-sizing: border-box;
+}
+
+.card .card-title {
+	height: 15%;
+	margin-bottom: 2rem;
+}
+
+.card .card-contents {
+	height: 15%;
+	margin-bottom: 2rem;
+}
+
+/* 페이징 버튼 스타일 */
+.paging-buttons {
+	list-style: none;
+	display: flex;
+	margin: 0 auto;
+}
+
+.paging-buttons li {
+	margin-right: 5px;
+	/* 버튼 간격 설정 */
+}
+
+.paging-buttons button {
+	border: 2px solid #3498db;
+	/* 테두리 스타일 설정 */
+	border-radius: 50%;
+	/* 원형 모양으로 만들기 */
+	background-color: transparent;
+	color: #3498db;
+	width: 30px;
+	height: 30px;
+	font-size: 14px;
+	cursor: pointer;
+	outline: none;
+}
+
+.paging-buttons button:hover {
+	background-color: #3498db;
+	color: #fff;
+}
+
+#pagination {
+	width: 20rem;
+	margin: 0 auto;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 2rem;
+	border: 1px solid rgba(0, 0, 0, 0.175);
+	padding: 1rem;
+	background-color: white;
+	border-radius: 5px;
+	text-align: center;
+	display:flex;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+}
+
+#pagination a {
+	text-decoration: none;
+}

@@ -1,0 +1,217 @@
+@charset "utf-8";
+
+*, ::before, ::after {
+	box-sizing: border-box;
+}
+
+html, body {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 400;
+	color: rgb(33, 33, 33);
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+	blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+	em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+	b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+	details, embed, figure, figcaption, footer, header, hgroup, main, menu,
+	nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body, input, textarea, select, button {
+	font-synthesis: none;
+	-webkit-font-smoothing: antialiased;
+	direction: ltr;
+	text-align: left;
+	color: rgb(33, 33, 33);
+	letter-spacing: -0.5px;
+	outline: 0px;
+	border: 0px;
+}
+
+body {
+	background-color: rgb(249, 249, 249);
+	font-size: 14px;
+	margin: 0px;
+	line-height: 1;
+}
+
+button {
+	background-color: transparent;
+	cursor: pointer;
+	outline: none;
+}
+
+button, input[type="text"], input[type="tel"], input[type="number"] {
+	appearance: none;
+}
+
+button, input {
+	padding: 0px;
+	border: 0px;
+}
+
+button, [type="button"], [type="reset"], [type="submit"] {
+	appearance: button;
+}
+
+button, select {
+	text-transform: none;
+}
+
+button, input {
+	overflow: visible;
+}
+
+button, input, optgroup, select, textarea {
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 1.15;
+	margin: 0px;
+}
+
+img {
+	vertical-align: bottom;
+	border-style: none;
+}
+/* 컨테이너 영역*/
+.container {
+	min-width: 1236px;
+}
+
+/* 메인 컨텐츠 영역 */
+.mid {
+	background: white;
+}
+
+/* 로그인페이지  */
+.p_login {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 1000;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	justify-content: center;
+	display: flex;
+}
+/* 로그인 영역(*/
+.wrap-log-con {
+	background: rgb(247, 247, 247);
+	width: 420px;
+	border-radius: 4px;
+	overflow: hidden;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 50px 0px;
+	position: relative;
+}
+/* x 버튼 */
+.i_close {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+/* 로그인 컨텐츠 감싸는 영역 */
+.log-con {
+	padding-top: 40px;
+}
+/* 로고 아이콘 영역 */
+.login-h1 {
+	display: block;
+	margin: auto auto 10px;
+}
+
+/* 텍스트 영역-메인 */
+.login-h2 {
+	font-size: 14px;
+	line-height: 1.5;
+	width: 90%;
+	height: 100%
+}
+/* 텍스트 영역-부가 */
+.login-h3 {
+	line-height: 1.5;
+	margin-bottom: 30px;
+	text-align: center;
+	font-size: 14px;
+	font-family: 'Noto Sans KR';
+	font-weight: bold;
+}
+/* 로그인 컨텐츠 영역 */
+.log-contents {
+	padding: 0px 70px;
+	display: flex;
+	flex-direction: column;
+}
+/* 각 id, pw input영역 */
+.log-sec {
+	width: 100%;
+	height: 38px;
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 7px 0px;
+	background: rgb(255, 255, 255);
+	text-align: center;
+	border-radius: 4px;
+	margin-bottom: 12px;
+	position: relative;
+}
+/* 로그인하기 버튼 */
+.log-btn {
+	width: 100%;
+	height: 38px;
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 7px 0px;
+	background: rgb(255, 255, 255);
+	text-align: center;
+	border-radius: 4px;
+	margin: 10px auto 10px;
+	position: relative;
+	background-color: #e9e8e2;
+	cursor: pointer;
+}
+
+.log-sec:nth-child(3) {
+	background-color: transparent;
+	font-size: 14px;
+	font-family: 'Noto Sans KR';
+	height: 30px;
+	line-height: 25px;
+}
+
+[class="log-btn"]:hover {
+	background-color: #90B046;
+	color: white;
+}
+
+/* 로그인 영역 안의 푸터 영역 */
+.log-bottom {
+	padding: 0.8rem 2rem 1.5rem;
+	font-size: 13px;
+	line-height: 1.5;
+	color: rgb(153, 153, 153);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.log-bottom-txt {
+	width: 100%;
+	text-align: center;
+	border-top: 1px solid rgb(229, 229, 229);
+	padding-top: 1.2rem;
+	line-height: 1.5rem;
+}
+
+a {
+	color: rgb(153, 153, 153);
+	text-decoration: none;
+	font-weight: bold;
+}

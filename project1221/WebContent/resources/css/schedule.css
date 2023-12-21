@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500&display=swap');
+
+.crew-table {
+	position: absolute;
+	width: 60%;
+	top: 60%;
+	left: 50%;
+	height: 55%;
+	transform: translate(-50%, -50%);
+	font-family: 'Noto Sans KR', sans-serif;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+}
+
+.schedule-container {
+	position: relative;
+	width: 100%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+#pagination {
+	display: flex;
+	margin-top: 32px;
+	justify-content: flex-end;
+}
+
+#pagination1 {
+	width: 200px;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 2rem;
+	border: 1px solid rgba(0, 0, 0, 0.175);
+	padding: 1rem;
+	background-color: white;
+	border-radius: 5px;
+	display: flex;
+	justify-content: space-between;
+	margin-right: 350px;
+}
+
+
+#pagination1 a {
+	text-decoration: none;
+}
+
+#pagination2 {
+	display: flex;
+	justify-content: flex-end;
+}
+
+#pagination2 .btn-write {
+	display: inline-block;
+	font-weight: 500;
+	text-align: center;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: 1px solid transparent;
+	padding: .375rem .75rem;
+	font-size: 1.5rem;
+	line-height: 1.5;
+	border-radius: .25rem;
+	transition: color .15s ease-in-out, background-color .15s ease-in-out,
+		border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	color: #fff;
+	background-color: #007bff;
+	border-color: #007bff;
+	width: 12rem;
+	height: 5rem;
+	font-family: 'Noto Sans KR';
+
+}
+
+.btn-write:hover {
+	color: #fff;
+	background-color: #0069d9;
+	border-color: #0062cc;
+	cursor: pointer;
+}
+
+.btn-write:focus,
+.btn-write:active {
+	color: #fff;
+	background-color: #0062cc;
+	border-color: #0056b3;
+	box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, .5);
+}
+
+#home,
+#board,
+#date,
+#photobook {
+	font-family: 'Noto Sans KR';
+	width: 10rem;
+	font-size: 1.5rem;
+	border: 1px solid rgba(0, 0, 0, 0.175);
+	cursor: pointer;
+	background-color: white;
+	padding: 1rem;
+	margin-right: 0.5rem;
+	border-radius: 0.75rem;
+}
+
+.crew-sort {
+	cursor: pointer;
+	display: flex;
+}
+
+.schedule-option {
+	margin-left: auto;
+}
+
+
+.schedule-option select {
+	font-family: 'Noto Sans KR';
+	font-size: 1.5rem;
+	border: 1px solid rgba(0, 0, 0, 0.175);
+	cursor: pointer;
+	background-color: white;
+	padding: 1rem;
+	-moz-appearance: none;
+	appearance: none;
+	border-radius: 5px;
+	text-align: center;
+
+}
+
+.schedule-option select:hover {
+	font-weight: bold;
+}
+
+.schedule-option select:focus {
+	outline: none;
+}
+
+/* 일정 컨테이너 스타일 */
+.schedule-container {
+	display: grid;
+	grid-template-columns: 3fr 3fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+.schedule-container>div {
+	background-color: white;
+	padding: 10px;
+	margin: 0.5px;
+}
+
+.schedule-table{
+	background-color: white;
+}
+/* 각 일정 아이템 스타일 */
+.schedule-item {
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.schedule-item .schedule-date,
+.schedule-item .schedule-participants,
+.schedule-item .schedule-status,
+.schedule-item .schedule-fee {
+	margin-bottom: 10px;
+}
+
+.schedule-item .schedule-date {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.schedule-item .schedule-participants,
+.schedule-item .schedule-fee {
+	font-size: 16px;
+}
+
+.schedule-item .schedule-status {
+	font-size: 16px;
+	color: #f00;
+}

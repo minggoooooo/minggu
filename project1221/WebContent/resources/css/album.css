@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+.crew-table {
+	position: absolute;
+	width: 60%;
+	top: 60%;
+	left: 50%;
+	height: 55%;
+	transform: translate(-50%, -50%);
+	font-family: 'Noto Sans KR', sans-serif;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#home, #board, #date, #photobook {
+	font-family: 'Noto Sans KR';
+	width: 10rem;
+	font-size: 1.5rem;
+	border: 1px solid rgba(0, 0, 0, 0.175);
+	cursor: pointer;
+	background-color: white;
+	padding: 1rem;
+	margin-right: 0.5rem;
+	border-radius: 0.75rem;
+}
+
+.crew-sort {
+	cursor: pointer;
+	display: flex;
+}
+
+/* 게시판 테이블 스타일 */
+.table-board {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 20px 0;
+}
+
+/* 테이블 헤더 스타일 */
+.table-board th {
+	background-color: #f2f2f2;
+	color: #333;
+	padding: 10px;
+	text-align: left;
+	font-size: 1.5rem;
+}
+
+/* 테이블 행 스타일 */
+.table-board td {
+	padding: 10px;
+	border: 1px solid #ddd;
+}
+
+/* 홀수 행에 대한 스타일 */
+.table-board tr:nth-child(odd) {
+	background-color: #f9f9f9;
+}
+
+/* 짝수 행에 대한 스타일 */
+.table-board tr:nth-child(even) {
+	background-color: #fff;
+}
+
+/* 마우스 호버시 행에 대한 스타일 */
+.table-board tr:hover {
+	background-color: #ddd;
+}
+
+/* 게시판 검색 폼 스타일 */
+.search-form {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 20px;
+}
+
+.search-form input[type="text"] {
+	width: 200px;
+	padding: 5px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+.search-form input[type="submit"] {
+	padding: 5px 15px;
+	border: none;
+	background-color: #333;
+	color: #fff;
+	cursor: pointer;
+	margin-left: 10px;
+	border-radius: 5px;
+}
+
+.album-item {
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	box-sizing: border-box;
+	height: 21.3rem;
+}
+
+.album-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 20px;
+	padding: 20px;
+	box-sizing: border-box;
+	 overflow-y: scroll; /* 'y'축 스크롤을 활성화 */
+    height: 54rem; /* 높이를 설정. 스크롤이 필요한 경우 이 값을 조정하세요. */
+    /* 이하 스타일은 원하는대로 조정하세요. */
+    background-color: #f2f2f2; 
+    border: 1px solid #ddd;
+    padding: 10px;
+}

@@ -1,0 +1,245 @@
+@charset "utf-8";
+
+*, ::before, ::after {
+	box-sizing: border-box;
+}
+
+html, body {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 400;
+	color: rgb(33, 33, 33);
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+	blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+	em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+	b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+	details, embed, figure, figcaption, footer, header, hgroup, main, menu,
+	nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* 아이디 찾기 페이지 전체 */
+.login_wrap {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #F8F8FA;
+	overflow-y: scroll;
+}
+/* 아이디 찾기 container영역 */
+.login_wrap .login_container {
+	width: 550px;
+	margin: 130px auto 210px;
+}
+/* 로고 감싸는 영역 */
+.login_wrap .logo {
+	text-align: center;
+	padding-bottom: 15px;
+}
+/* 로고 이미지 감싸는 a태그 */
+body, h1, h2, h3, h4, h5, h6, table, pre, xmp, plaintext, listing, input,
+	textarea, select, button, a {
+	font-family: 'Helvetica Neue', Apple SD Gothic Neo, sans-serif;
+	letter-spacing: -0.01em;
+}
+
+button, input, select, textarea, a {
+	vertical-align: middle;
+}
+
+a {
+	color: #1c1c1c;
+	text-decoration: none;
+	background: none;
+}
+
+body, h1, h2, h3, h4, h5, h6, table, pre, xmp, plaintext, listing, input,
+	textarea, select, button, a {
+	font-size: 12px;
+	color: #0F0F12;
+	line-height: 1.25;
+	font-family: "Roboto", AppleGothic, sans-serif;
+}
+/* 로고 img영역 */
+img {
+	vertical-align: middle;
+}
+
+img, fieldset, button {
+	border: 0 none;
+}
+/* 로고 제외 로그인 contents영역 */
+.login_wrap .login_cont {
+	background: #fff;
+	padding: 50px 45px 10px;
+}
+/* 아이디 비밀번호 찾기 텍스트 타이틀 */
+.login_wrap .login_cont>h1 {
+	/* text-align: center; */
+	font-style: italic;
+	font-weight: bold;
+	font-size: 24px;
+	padding: 20px 0 15px 0;
+	color: #828282;
+}
+/* 아이디 비밀번호 찾기 부가설명 텍스트*/
+.login_wrap .login_cont>p {
+	font-size: 15px;
+	color: #343434;
+	letter-spacing: -0.01em;
+	line-height: 24px;
+}
+
+button, input, select, textarea, a {
+	vertical-align: middle;
+}
+
+img, fieldset, button {
+	border: 0 none;
+}
+/* 음..hidden영역 */
+hr, caption, legend {
+	display: none;
+}
+
+/* 이름, 이메일 입력하는 li를 감싸는 ul  */
+.login_wrap .login_cont .frm_list {
+	padding-top: 40px;
+}
+/* 이름, 이메일 입력하는 li */
+.login_wrap .login_cont .frm_list li {
+	padding-bottom: 15px;
+}
+
+li {
+	list-style: none;
+}
+/* 아이디 li안의 input태그 */
+.login_wrap .login_cont .frm_list input {
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #E8E8E8;
+	height: 50px;
+	font-size: 14px;
+	letter-spacing: -0.01em;
+	padding: 18px 15px;
+	box-sizing: border-box;
+}
+
+.MS_input_txt {
+	margin-right: 5px;
+	padding: 2px 0 0 2px;
+	line-height: 31px;
+	height: 31px;
+}
+/* 생년월일 select박스 */
+
+/* 확인하기 버튼 감싸는 영역 */
+.btn_wrap {
+	padding: 20px 0 15px;
+}
+
+/* 버튼 a태그로 만듬 */
+.btn_wrap button {
+	display: block;
+	line-height: 60px;
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 7px 0px;
+	background-color: #e9e8e2;
+	border-radius: 4px;
+	text-align: center;
+	font-size: 15px;
+	color: #fff;
+	font-weight: 600;
+	width: 100%;
+}
+#wrap-birth {
+	display: flex;
+}
+
+[class="btn normal login type01"]:hover {
+	background-color: #90B046;
+	color: white;
+}
+
+/* 버튼 아래 배너 영역(회원가입 혜택을 img로 넣음) */
+.login_banner {
+	padding-top: 25px;
+	padding: 0.8rem 2rem 1.5rem;
+	font-size: 14px;
+	line-height: 1.5;
+	color: rgb(153, 153, 153);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+img {
+	vertical-align: middle;
+}
+
+.log-banner-txt {
+	width: 100%;
+	text-align: center;
+	padding-top: 0.8rem;
+	line-height: 1.5rem;
+}
+
+.birth-select {
+	min-width: 0;
+	flex: 1;
+ 	border-bottom: 1px solid #E8E8E8;
+}
+
+.birth-select label {
+	display: block;
+	overflow: hidden;
+	position: relative;
+	height: 50px;
+	/* border: 1px solid #cdcdcd; */
+	background-color: #fff;
+	
+}
+
+select {
+	border-radius: 0;
+	cursor: pointer;
+	
+
+}
+
+.birth-select label select {
+	position: relative;
+	z-index: 1;
+	padding: 0 34px 0 12px;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	background-color: transparent;
+	font-size: 14px;
+	line-height: 31px;
+	letter-spacing: -0.01em;
+	color: #0f0f12;
+	font-family: "Roboto", AppleGothic, sans-serif;
+}
+.page-move {
+	display: flex;
+	justify-content: flex-end;
+	margin: 5px 10px 5px;
+	border-bottom: 1px solid rgb(229, 229, 229);
+    padding: 1px 10px 20px;
+	
+}
+a {
+	color: #505050;
+	text-decoration: none;
+    font-style:italic;
+	font-size: 14px;
+}

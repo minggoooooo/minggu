@@ -1,0 +1,209 @@
+@charset "utf-8";
+
+/* 탈퇴하기 페이지 전체 영역(헤더 포함) */
+#contentWrapper {
+	padding-top: 120px;
+}
+/* 탈회하기 페이지 본문 감싸는 영역=#contentWrap */
+#header, #layerWrap, #contentWrap, #ftLink .link, #footer {
+	position: relative;
+	width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* 탈회하기 페이지 본문 영역=#content */
+#content {
+	min-height: 400px;
+}
+
+#aside, #content {
+	position: relative;
+}
+/* content 내에 reconfirmPasswd로 한번 더 감싸짐*/
+/* 비밀번호 재확인 타이틀, 부가 설명 텍스트, 이미지 영역(form제외)  = .reconfirmTop */
+#reconfirmPasswd .reconfirmTop {
+	padding-top: 100px;
+	text-align: center;
+}
+/* ’비밀번호 재확인’타이틀 */
+#reconfirmPasswd .reconfirmTop h2 {
+	font-size: 44px;
+	color: #000;
+	font-weight: 500;
+	line-height: 44px;
+	letter-spacing: -3px;
+}
+
+body, h1, h2, h3, h4, h5, h6, table, pre, xmp, plaintext, listing, input,
+	textarea, select, button {
+	font-family: 'Helvetica Neue', Apple SD Gothic Neo, sans-serif;
+	letter-spacing: -0.01em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+
+body, h1, h2, h3, h4, h5, h6, table, pre, xmp, plaintext, listing, input,
+	textarea, select, button {
+	font-size: 12px;
+	color: #0F0F12;
+	line-height: 1.25;
+	font-family: "Roboto", AppleGothic, sans-serif;
+}
+
+html, body, pre, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, li, ol, th, td,
+	p, blockquote, form, fieldset, legend, menu, nav, section, hgroup,
+	article, header, aside, footer, input, select, textarea, button {
+	margin: 0;
+	padding: 0;
+}
+
+/* 부가설명 텍스트 */
+#reconfirmPasswd .reconfirmTop .txt {
+	padding-top: 20px;
+	font-size: 14px;
+	color: #7f7f7f;
+	text-align: center;
+	line-height: 20px;
+}
+
+.reconfim_i {
+	margin: 0 auto;
+	width: 200px;
+	height: 200px;
+	background: url("../images/img_danger_warning.png") 50% no-repeat;
+	background-size: cover;
+}
+/* form의 input영역 */
+button, input, select, textarea, a {
+	vertical-align: middle;
+}
+/* form의 fieldset영역 */
+img, fieldset, button {
+	border: 0 none;
+}
+
+hr, caption, legend {
+	display: none;
+}
+/* 비밀번호 재확인 폼-fiedset 영역*/
+#reconfirmPasswd .frm {
+	margin: 40px auto;
+	padding: 20px 0 40px 0;
+	border-top: 1px solid #e9e9e9;
+	border-bottom: 1px solid #e9e9e9;
+	width: 600px;
+}
+
+#reconfirmPasswd .frm ul {
+	*zoom: 1;
+	width: 483px;
+	margin: 0 auto;
+}
+
+#reconfirmPasswd .frm li {
+	float: left;
+	width: 100%;
+	position: relative;
+	margin-top: 5px;
+	padding-left: 110px;
+	font-size: 14px;
+	color: #8d8d8d;
+	line-height: 37px;
+	text-align: left;
+}
+
+ul li {
+	display: inline-block;
+}
+
+li {
+	list-style: none;
+}
+/* ID 보여주는 영역 li안의 id라벨 */
+#reconfirmPasswd .frm li .lab {
+	position: absolute;
+	top: 0;
+	left: 0;
+	line-height: 43px;
+}
+/* ID 보여주는 영역 li안의 사용자id 텍스트*/
+#reconfirmPasswd .frm li strong {
+	color: #000;
+	font-weight: normal;
+}
+/* password 보여주는 영역 li안의 span + input을 감싸는 label */
+#reconfirmPasswd .frm li label {
+	position: relative;
+	display: block;
+}
+
+#reconfirmPasswd .frm li label span {
+	position: absolute;
+	top: 0;
+	left: 10px;
+	font-size: 14px;
+	color: #c1c1c1;
+	line-height: 43px;
+	cursor: pointer;
+}
+
+#reconfirmPasswd .frm li .txt-input {
+	width: 361px;
+	height: 42px;
+	line-height: 42px;
+	padding-left: 10px;
+	color: #333;
+	font-size: 14px;
+	border: 1px solid #ddd;
+	background: #fff;
+}
+
+#reconfirmPasswd .frm ul:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+/* 버튼 영역 */
+#reconfirmPasswd .btns {
+	margin: 40px 0;
+	text-align: center;
+	font-size: 0;
+}
+
+#reconfirmPasswd .btns a {
+	display: inline-block;
+	margin: 0 7px;
+	width: 228px;
+	height: 58px;
+	font-size: 16px;
+	line-height: 58px;
+	border: none;
+	border-radius: 4px;
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 7px 0px;
+	background-color: #e9e8e2;
+	text-decoration: none;
+}
+
+#reconfirmPasswd .btns a#CSSbuttonBlack {
+	display: inline-block;
+	color: #ffffff;
+	text-align: center;
+	background-color: #90B046;
+	transition: all 0.3s ease;
+}
+
+button#CSSbuttonBlack {
+	display: inline-block;
+	margin: 0 7px;
+	width: 228px;
+	height: 58px;
+	font-size: 16px;
+	line-height: 58px;
+	border: none;
+	border-radius: 4px;
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 7px 0px;
+	background-color: #e9e8e2;
+	text-decoration: none;
+}

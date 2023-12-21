@@ -1,0 +1,281 @@
+@charset "UTF-8";
+
+/* 구글 폰트 임포트(NotoSansKr) */
+@import
+	url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500&display=swap')
+	;
+
+html, body {
+	width: 100%;
+	height: 100vh;
+	font-size: 10px;
+	line-height: 1.285;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 100%;
+}
+
+.contents-title h6 {
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.top {
+	position: sticky;
+	width: 100%;
+	height: 10%;
+	font-size: 1.7rem;
+}
+
+.top .top-logo {
+	display: inline-block;
+	width: 9rem;
+	height: 8rem;
+	background-image: url(../../resources/images/img_logo.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.top-inner {
+	padding-left: 5vw;
+	padding-right: 5vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.top-list {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	width: 30vw;
+}
+
+.top-menu a {
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+}
+
+.top-sub {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(100%);
+	max-width: 32vw;
+	background-color: #f5f5f5;
+	padding: 1rem;
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+}
+
+.top-list {
+	position: relative;
+}
+
+/*.top-inner:active+.top-sub {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}*/
+.top-sub ul {
+	list-style: none;
+}
+
+.top-sub a {
+	color: #337ab7;
+	text-decoration: none;
+	background-color: #f8f9fa;
+	border-radius: 5px;
+}
+
+.top-login {
+	cursor: pointer;
+}
+
+.top-signup {
+	cursor: pointer;
+	width: 90px;
+}
+
+a:hover {
+	color: #23527c;
+}
+
+.sub-menu1, .sub-menu2, .sub-menu3, .sub-menu4 {
+	margin-right: 5rem;
+	/* 오른쪽 간격 */
+}
+
+.sub-menu4:last-child {
+	margin-right: 0;
+}
+
+.sub-menu1 li, .sub-menu2 li, .sub-menu3 li, .sub-menu4 li {
+	margin-bottom: 2rem;
+	/* 아래쪽 간격 */
+}
+
+.sub-menu1 {
+	width: 9rem;
+}
+
+.sub-menu1>li>a {
+	color: #337ab7;
+	text-decoration: none;
+	padding: 10px 20px;
+	display: block;
+}
+
+.sub-menu2>li>a {
+	color: #337ab7;
+	text-decoration: none;
+	padding: 10px 20px;
+	display: block;
+}
+
+.sub-menu3>li>a {
+	color: #337ab7;
+	text-decoration: none;
+	padding: 10px 20px;
+	display: block;
+}
+
+.sub-menu3>li>ul, .sub-menu4>li>ul>li>a {
+	list-style-type: none;
+	margin-left: 20px;
+}
+
+.sub-menu3>li>ul>li>a, .sub-menu4>li>ul>li>a {
+	color: #23527c;
+	text-decoration: none;
+	padding: 5px 10px;
+	display: block;
+}
+
+.sub-menu3>li>ul>li>a:hover, .sub-menu4>li>ul>li>a {
+	color: #f8f9fa;
+	background-color: #23527c;
+}
+
+.top-login{
+	display: flex;
+    justify-content: space-between;
+    width: 145px;
+    }
+
+.top-menu span {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.top-right {
+	font-family: 'Noto Sans KR', sans-serif;
+	display: flex;
+	justify-content: space-between;
+	width: 183px;
+}
+
+#sec {
+	height: 2vh;
+}
+
+/* top, bottom 높이 고정 
+mid는 contents 내용에 따라 유동적으로 
+변동하기 때문에 높이를 따로 설정하지 않음 */
+.mid {
+	width: 100%;
+}
+
+.container-background {
+	background-image: url('../images/jogging.jpg');
+	background-size: cover;
+	height: 100vh;
+}
+
+.contents-title {
+	padding-bottom: 2.8rem;
+	font-family: "Noto Serif KR", serif;
+	font-size: 10rem;
+	font-weight: 500;
+	line-height: 11.5rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: white;
+}
+
+/* mid-inner영역에 여백 줌 */
+.mid-inner {
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+
+.bottom {
+	height: 10%;
+	font-size: 1.3rem;
+}
+
+.bottom-inner {
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+
+.bottom .footer-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 1rem;
+}
+
+.bottom .footer-logo {
+	display: inline-block;
+	width: 9rem;
+	height: 7rem;
+	background-image: url(../../resources/images/img_logo.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.bottom .footer-menu {
+	display: flex;
+	padding: 0;
+	justify-content: space-between;
+	list-style: none;
+}
+
+.footer-menu li {
+	display: inline-block;
+	margin: 0 10px;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.bottom .footer-sns {
+	display: flex;
+	list-style: none;
+	width: 9rem;
+	height: 3rem;
+}
+
+.bottom .footer-bottom {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.bottom .footer-bottom p {
+	font-family: 'Noto Sans KR', sans-serif;
+}

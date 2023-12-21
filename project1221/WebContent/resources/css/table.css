@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+.crew-table {
+	position: absolute;
+	width: 60%;
+	top: 60%;
+	left: 50%;
+	height: 645px;
+	transform: translate(-50%, -50%);
+	font-family: 'Noto Sans KR', sans-serif;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#home, #board, #date, #photobook {
+	font-family: 'Noto Sans KR';
+	width: 10rem;
+	font-size: 1.5rem;
+	border: 1px solid rgba(0, 0, 0, 0.175);
+	cursor: pointer;
+	background-color: white;
+	padding: 1rem;
+	margin-right: 0.5rem;
+	border-radius: 0.75rem;
+}
+
+.crew-sort {
+	cursor: pointer;
+	display: flex;
+}
+
+.table-board tbody {
+	overflow: hidden;
+}
+
+.table-board tbody tr {
+	height: 50px;
+}
+
+.table-board tbody td a {
+	text-decoration: none; /* 밑줄 제거 */
+	color: black; /* 글자색 변경 */
+}
+
+.table-container {
+	height: 536px;
+}
+
+.table-board {
+	width: 100%;
+	height: 100%;
+	border-collapse: collapse;
+	background-color: white;
+}
+
+/* 테이블 헤더 스타일 */
+.table-board thead {
+	height: 5rem;
+}
+
+.table-board th {
+	background-color: #f2f2f2;
+	color: #333;
+	text-align: left;
+	font-size: 1.5rem;
+	padding-left: 1rem;
+	border: 1px solid #ddd;
+}
+
+.table-board th:nth-child(1) {
+	width: 12%;
+	/* Adjust this value for the Title column */
+}
+
+.table-board th:nth-child(2) {
+	width: 42%;
+}
+
+.table-board th:nth-child(3) {
+	width: 15%;
+	/* Equal width for Author, Created date, and Views columns */
+}
+
+.table-board th:nth-child(4) {
+	width: 17%;
+}
+
+.table-board th:nth-child(5) {
+	width: 15%;
+}
+
+.table-board tbody tr {
+	height: 3.728rem;
+	/* Replace this value with your actual row height */
+}
+
+/* 테이블 행 스타일 */
+.table-board td {
+	border: 1px solid #ddd;
+	padding-left: 1rem;
+	font-size: 1.5rem;
+}
+
+/* 홀수 행에 대한 스타일 */
+.table-board tr:nth-child(odd) {
+	background-color: #f9f9f9;
+}
+
+/* 짝수 행에 대한 스타일 */
+.table-board tr:nth-child(even) {
+	background-color: #fff;
+}
+
+/* 마우스 호버시 행에 대한 스타일 */
+.table-board tr:hover {
+	background-color: #ddd;
+}
+
+/* 게시판 검색 폼 스타일 */
+.search-form {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 0.5rem;
+}
+
+#pagination {
+	width: 25rem;
+	margin: 0 auto;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 2rem;
+	border: 1px solid rgba(0, 0, 0, 0.175);
+	padding: 1rem;
+	background-color: white;
+	border-radius: 5px;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+	margin-top: 0.5rem;
+	margin-left: 15rem;
+}
+
+#pagination a {
+	text-decoration: none;
+}
+
+.search-form input[type="text"] {
+	width: 20rem;
+	padding: 5px;
+	height: 5rem;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+.write-post-button {
+	display: inline-block;
+	padding: 0px 15px;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	margin-left: 10px;
+	border-radius: 5px;
+	background-color: #4CAF50;
+	height: 5rem;
+	line-height: 5rem;
+	text-decoration: none;
+	text-decoration-line: none;
+	font-size: 1.5rem;
+	/* 글씨 크기 조정 */
+	text-align: center;
+	/* 가운데 정렬 */
+	vertical-align: middle;
+	font-size: 1.5rem;
+	/* 가운데 정렬 */
+	margin-top: 0.5rem;
+}
+
+/* Hover style */
+.write-post-button:hover {
+	background-color: #555;
+	/* Change color on hover if desired */
+}
+
+.search_bar {
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+}
+
+.search-form input[type="submit"] {
+	padding: 5px 15px;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	margin-left: 0.2rem;
+	border-radius: 5px;
+	background-color: #4CAF50;
+	height: 5rem;
+}

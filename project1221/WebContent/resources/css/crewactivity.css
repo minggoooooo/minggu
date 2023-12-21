@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+.crew-activity {
+	position: absolute;
+	width: 60%;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'Noto Sans KR', sans-serif;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.crew-sort {
+	cursor: pointer;
+	display: flex;
+}
+
+#home,
+#board,
+#date,
+#photobook {
+	font-family: 'Noto Sans KR';
+	width: 10rem;
+	font-size: 1.5rem;
+	border: 1px solid rgba(0, 0, 0, 0.175);
+	cursor: pointer;
+	background-color: white;
+	padding: 1rem;
+	margin-right: 0.5rem;
+	border-radius: 0.75rem;
+}
+
+
+.activity-background {
+	width: 100%;
+	border: rgba(0, 0, 0, 0.175);
+	overflow: hidden;
+}
+
+.activity-background img {
+	width: 100%;
+}
+
+.activity-details {
+	background-color: white;
+	padding-bottom: 20px;
+}
+
+.activity-details p {
+	font-size: 22px;
+	margin-bottom: 8px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin: 0;
+}

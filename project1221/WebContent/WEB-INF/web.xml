@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>StepByStep2</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+
+<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>controller.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>controller.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/LogoutServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RegisterServlet</servlet-name>
+		<servlet-class>controller.RegisterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/RegisterServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>FindIdServlet</servlet-name>
+		<servlet-class>controller.FindIdServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FindIdServlet</servlet-name>
+		<url-pattern>/FindIdServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>FindPwServlet</servlet-name>
+		<servlet-class>controller.FindPwServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FindPwServlet</servlet-name>
+		<url-pattern>/FindPwServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>IdCheckServlet</servlet-name>
+		<servlet-class>controller.IdCheckServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IdCheckServlet</servlet-name>
+		<url-pattern>/IdCheckServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>PwResetServlet</servlet-name>
+		<servlet-class>controller.PwResetServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PwResetServlet</servlet-name>
+		<url-pattern>/PwResetServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CrewBoardServlet</servlet-name>
+		<servlet-class>controller.CrewBoardServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CrewBoardServlet</servlet-name>
+		<url-pattern>*.board</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>RecommendServlet</servlet-name>
+		<servlet-class>controller.RecommendServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RecommendServlet</servlet-name>
+		<url-pattern>/RecommendServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DeleteMemberServlet</servlet-name>
+		<servlet-class>controller.DeleteMemberServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteMemberServlet</servlet-name>
+		<url-pattern>/DeleteMemberServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeleteBoardServlet</servlet-name>
+		<servlet-class>controller.DeleteBoardServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteBoardServlet</servlet-name>
+		<url-pattern>/DeleteBoardServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>EditBoardServlet</servlet-name>
+		<servlet-class>controller.EditBoardServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditBoardServlet</servlet-name>
+		<url-pattern>/EditBoardServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UpdatePhotoServlet</servlet-name>
+		<servlet-class>controller.UpdatePhotoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdatePhotoServlet</servlet-name>
+		<url-pattern>/UpdatePhotoServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DeletePhotoServlet</servlet-name>
+		<servlet-class>controller.DeletePhotoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeletePhotoServlet</servlet-name>
+		<url-pattern>/DeletePhotoServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UpdateMemberServlet</servlet-name>
+		<servlet-class>controller.UpdateMemberServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateMemberServlet</servlet-name>
+		<url-pattern>/UpdateMemberServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CrewServlet</servlet-name>
+		<servlet-class>controller.CrewServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CrewServlet</servlet-name>
+		<url-pattern>*.crew</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ReplyServlet</servlet-name>
+		<servlet-class>controller.ReplyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReplyServlet</servlet-name>
+		<url-pattern>*.reply</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LongCrewServlet</servlet-name>
+		<servlet-class>controller.LongCrewServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LongCrewServlet</servlet-name>
+		<url-pattern>*.long</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CrewJoinServlet</servlet-name>
+		<servlet-class>controller.CrewJoinServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CrewJoinServlet</servlet-name>
+		<url-pattern>*.join</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CourseServlet</servlet-name>
+		<servlet-class>controller.CourseServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CourseServlet</servlet-name>
+		<url-pattern>/CourseServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>JoinScheduleServlet</servlet-name>
+		<servlet-class>controller.JoinScheduleServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>JoinScheduleServlet</servlet-name>
+		<url-pattern>/JoinScheduleServlet</url-pattern>
+	</servlet-mapping>
+	
+	<context-param>
+		<param-name>POST_PAGE</param-name>
+		<param-value>8</param-value>
+	</context-param>
+	<context-param>
+		<param-name>BLOCK_COUNT</param-name>
+		<param-value>5</param-value>
+	</context-param>
+	
+
+
+</web-app>

@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+.postregister {
+	position: absolute;
+	width: 30%;
+	height: 50%;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'Noto Sans KR';
+	border: 1px solid rgba(0, 0, 0, 0.175);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	background-color: white;
+	padding: 20px;
+	border-radius: 8px;
+}
+
+.post-header {
+	font-size: 24px;
+	font-weight: bolder;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+input[type="text"] {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 16px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+}
+
+#contents {
+	height: 20rem;
+	max-width: 528px;
+	max-height: 20rem;
+	overflow-y: auto;
+}
+
+#imagePhoto {
+	display: none;
+}
+
+input[type="date"] {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 16px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+}
+
+.custom-file-upload {
+	display:flex;
+	cursor: pointer;
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+.custom-file-upload img {
+	border: none;
+	display: block;
+	margin-bottom: 5px;
+}
+
+button[type="submit"] {
+	width: 100%;
+	padding: 12px 20px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-top: 1rem;
+	height: 12%;
+	font-size: 2rem;
+}
+
+button[type="submit"]:hover {
+	background-color: #45a049;
+}
+
+label {
+	display: block;
+	margin-bottom: 8px;
+	font-size: 1.5rem;
+}
